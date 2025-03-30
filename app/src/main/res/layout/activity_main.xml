@@ -37,7 +37,7 @@
         android:id="@+id/frameLayout"
         android:layout_width="410dp"
         android:layout_height="70dp"
-        android:background="#9FD160"
+        android:background="#5DA604"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
