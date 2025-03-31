@@ -5,23 +5,10 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FBFAFA"
-    tools:context=".MainActivity">
-
-    <LinearLayout
-        android:layout_width="300dp"
-        android:layout_height="500dp"
-        android:layout_marginTop="100dp"
-        android:background="#906FCA"
-        android:divider="@color/material_dynamic_tertiary50"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="@+id/frameLayout2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/frameLayout"
-        app:layout_constraintVertical_bias="0.045">
-
-    </LinearLayout>
+    android:background="#19C3DE"
+    android:backgroundTint="#85AFF043"
+    tools:context=".MainActivity"
+    tools:ignore="ExtraText">
 
     <FrameLayout
         android:id="@+id/frameLayout2"
@@ -31,16 +18,143 @@
         app:layout_constraintBottom_toBottomOf="parent"
         tools:layout_editor_absoluteX="0dp">
 
-    </FrameLayout>
+    </FrameLayout><![CDATA[
+    androidx.cardview.widget.CardView
+    android:id="@+id/top_container"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    app:layout_constraintTop_toTopOf="parent">
 
-    <FrameLayout
-        android:id="@+id/frameLayout"
-        android:layout_width="410dp"
-        android:layout_height="70dp"
-        android:background="#5DA604"
+
+
+
+
+    ]]>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="353dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="516dp"
+        android:autoLink="web"
+        android:background="#FAFAFA"
+        android:backgroundTint="#00F6F5F5"
+        android:drawableTint="#FFFFFF"
+        android:linksClickable="true"
+        android:text="@string/https_www_movieposters_com"
+        android:textColor="#1F1D1D"
+        android:textColorLink="#4CAF50"
+        app:layout_constraintBottom_toTopOf="@+id/frameLayout2"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="352dp"
+        android:layout_height="242dp"
+        android:background="@drawable/color"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/frameLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.77">
+
+        <Button
+            android:id="@+id/button_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Меню"
+            android:background="@android:color/transparent"/>
+
+        <Button
+            android:id="@+id/button_settings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Настройки"
+            android:background="@android:color/transparent"/>
+
+        <Button
+            android:id="@+id/button_exit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Выход"
+            android:background="@android:color/transparent"/>
+
+        <Button
+            android:id="@+id/button_my_movies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Мои фильмы"
+            android:background="@android:color/transparent"/>
+
+        <Button
+            android:id="@+id/button_new_releases"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Новинки"
+            android:background="@android:color/transparent"/>
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/top_container"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="15dp"
+        android:elevation="5dp"
         app:layout_constraintTop_toTopOf="parent">
 
-    </FrameLayout>
+        <ImageView
+            android:id="@+id/imageView30"
+            android:layout_width="62dp"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/hfdd" />
 
+        <ImageView
+            android:id="@+id/imageView32"
+            android:layout_width="424dp"
+            android:layout_height="117dp"
+            android:scaleType="fitEnd"
+            app:srcCompat="@drawable/poster_1" />
+
+        <ImageView
+            android:id="@+id/imageView33"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/poster_2" />
+
+        <ImageView
+            android:id="@+id/imageView34"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/poster_3" />
+
+        <ImageView
+            android:id="@+id/imageView35"
+            android:layout_width="455dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/poster_4" />
+
+        <ImageView
+            android:id="@+id/imageView36"
+            android:layout_width="608dp"
+            android:layout_height="126dp"
+            app:srcCompat="@drawable/poster_5" />
+
+    </androidx.cardview.widget.CardView>
+
+    <![CDATA[
+
+
+    ]]>
 </androidx.constraintlayout.widget.ConstraintLayout>
